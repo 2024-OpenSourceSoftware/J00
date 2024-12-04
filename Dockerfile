@@ -1,9 +1,16 @@
-FROM node:16
+FROM bitnami/node:16 as builder
+ENV NODE_ENV="production"
 
-WORKDIR /usr/src/app
-COPY package*.json ./
+COPY ./app /app
+
+WORKDIR /app
+
 RUN npm install
-COPY . .
 
+FROM bitnami/node:16-prod
+ENV NODE_ENV="production"
+COPY --from=builder /app /app
+ENV PORT 5006
 EXPOSE 5006
-CMD [ "node", "index.js" ]
+
+CMD [ "npm", "start" ]
