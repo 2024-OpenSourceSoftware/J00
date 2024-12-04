@@ -22,7 +22,7 @@ spec:
                                   image: maengkim/j00:latest
                                   imagePullPolicy: Always
                                   ports:
-                                          - containerPort: 5006
+                                          - containerPort: 5000
                                             name: j00
 ---
 apiVersion: v1
@@ -34,7 +34,7 @@ metadata:
 spec:
         ports:
                 - port: 80
-                  targetPort: 5006
+                  targetPort: 5000
         selector:
                 app: j00
                 tier: j00
