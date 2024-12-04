@@ -24,6 +24,8 @@ spec:
                                   ports:
                                           - containerPort: 5000
                                             name: j00
+                        imagePullSecrets:
+                                - name: regcred
 ---
 apiVersion: v1
 kind: Service
