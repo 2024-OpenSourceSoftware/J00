@@ -178,5 +178,6 @@ https://j00.shop
 ### ERD ⚡️
 <img src="https://github.com/user-attachments/assets/94922f54-aa4d-409f-ba35-c0ce60b48071" width="1000">
 
+
 ### MySQL diagram ⚡️
 <img src="https://github.com/user-attachments/assets/a108c685-3d41-41cb-804f-b2db106be422" width="1000">
