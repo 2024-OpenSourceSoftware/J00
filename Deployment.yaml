@@ -19,7 +19,7 @@ spec:
                 spec:
                         containers:
                                 - name: j00
-                                  image: maengkim/j00:9
+                                  image: maengkim/j00:latest
                                   imagePullPolicy: Always
                                   ports:
                                           - containerPort: 5000
