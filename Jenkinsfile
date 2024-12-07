@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = '' // 추후 추가 예정
-        CLUSTER_NAME = '' // 추후 추가 예정
+        PROJECT_ID = 'opensource2024-440504'
+        CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3-a'
-        CREDENTIALS_ID = '' //GKE Credential 추가 예정
+        CREDENTIALS_ID = '317051b1-ad33-432b-9b7c-d2d9ef97571e'
     }
     stages {
         stage("Checkout code") {
